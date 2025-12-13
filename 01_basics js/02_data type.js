@@ -1,0 +1,104 @@
+//Data types in JavaScript
+
+"use strict";//treat all JS code as modern JS code
+
+//In JavaScript, data types are used to define the type of data that can be stored and manipulated within a program.
+//JavaScript is a dynamically typed language, which means that variables can hold values of any data type without explicit type declaration.
+
+//There are two main categories of data types in JavaScript:
+//1. Primitive Data Types
+//2. Non-Primitive Data Types (also known as Reference Data Types)
+
+//1. Primitive Data Types:
+//These are the most basic data types in JavaScript. They include:
+
+//1. number 2. string 3. boolean 4. null 5. undefined 6. symbol 7. bigint
+
+//note : Primitive data types are immutable, meaning their values cannot be changed once created.
+
+
+//Example of Primitive Data Types:
+
+//////////////////////////////////////////////////////////////////////////////////////////Number////////////////////////////////////////////////////////////////////////////////////////
+
+let num = 42; // A number
+console.log(typeof num); // Output: "number"
+
+//////////////////////////////////////////////////////////////////////////////////////////String////////////////////////////////////////////////////////////////////////////////////////
+
+let str = "Hello, World!"; // A string used to represent text types of string "" '' `` 
+console.log(typeof str); // Output: "string"
+
+//////////////////////////////////////////////////////////////////////////////////////////Boolean////////////////////////////////////////////////////////////////////////////////////////
+
+let isJavaScriptFun = true; // A boolean and its value is either true or false
+console.log(typeof isJavaScriptFun); // Output: "boolean"                                       
+//////////////////////////////////////////////////////////////////////////////////////////Null////////////////////////////////////////////////////////////////////////////////////////
+
+let emptyValue = null; // A null value used to represent the absence of any object value
+console.log(typeof emptyValue); // Output: "object" (this is a known quirk in JavaScript)
+
+//////////////////////////////////////////////////////////////////////////////////////////Undefined////////////////////////////////////////////////////////////////////////////////////////
+
+let notDefined; // An undefined value used when a variable has been declared but not assigned a value
+console.log(typeof notDefined); // Output: "undefined"
+
+//////////////////////////////////////////////////////////////////////////////////////////Symbol////////////////////////////////////////////////////////////////////////////////////////
+
+let sym = Symbol('unique'); // A symbol used for unique identifiers
+console.log(typeof sym); // Output: "symbol"
+
+//////////////////////////////////////////////////////////////////////////////////////////BigInt////////////////////////////////////////////////////////////////////////////////////////
+
+let bigIntNum = 9007199254740991n; // A BigInt used for large integers
+console.log(typeof bigIntNum); // Output: "bigint"                          
+
+//2. Non-Primitive Data Types:
+//These data types are more complex and can hold multiple values. They include:
+
+//1. Object 2. Array 3. Function 4. Date 5. RegExp
+
+//note : Non-Primitive data types are mutable, meaning their values can be changed after creation.
+
+//Example of Non-Primitive Data Types:
+
+//////////////////////////////////////////////////////////////////////////////////////////Object////////////////////////////////////////////////////////////////////////////////////////            
+
+let person = { name: "Alice", age: 30 }; // An object
+console.log(typeof person); // Output: "object"
+
+//////////////////////////////////////////////////////////////////////////////////////////Array////////////////////////////////////////////////////////////////////////////////////////                 
+
+let numbers = [1, 2, 3, 4, 5]; // An array  
+console.log(typeof numbers); // Output: "object"    
+//////////////////////////////////////////////////////////////////////////////////////////Function////////////////////////////////////////////////////////////////////////////////////////  
+function greet() { // A function    
+    console.log("Hello!");
+}
+console.log(typeof greet); // Output: "function"
+
+//////////////////////////////////////////////////////////////////////////////////////////Date////////////////////////////////////////////////////////////////////////////////////////  
+
+let currentDate = new Date(); // A date object
+console.log(typeof currentDate); // Output: "object"
+
+//////////////////////////////////////////////////////////////////////////////////////////RegExp////////////////////////////////////////////////////////////////////////////////////////  
+
+let pattern = /ab+c/; // A regular expression
+console.log(typeof pattern); // Output: "object"
+
+//In summary, JavaScript provides a variety of data types to handle different kinds of data, ranging from simple primitive types to complex non-primitive types. Understanding these data types is essential for effective programming in JavaScript.       
+
+///////////////////////////////////////////////////////Additional Info ///////////////////////////////////////////////////////
+//JavaScript is a dynamically typed language, which means that variables can hold values of any data type without explicit type declaration.
+//You can use the typeof operator to determine the data type of a variable or value in JavaScript.
+//JavaScript also supports type coercion, where values can be automatically converted from one data type to another in certain situations. 
+
+//note code redability is very important;
+console.log(3
+    +
+    3
+); //this is woriking but not readable
+
+console.log(3 + 3); //this is readable
+//write comments for better understanding of code;  
