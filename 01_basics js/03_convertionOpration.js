@@ -84,3 +84,5 @@ let k = undefined;
 let undefinedToBoolean = Boolean(k)
 console.log(undefinedToBoolean);//print false
 console.log(typeof undefinedToBoolean); 
+
+////the End////
