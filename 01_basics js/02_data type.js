@@ -15,6 +15,8 @@
 //1. number 2. string 3. boolean 4. null 5. undefined 6. symbol 7. bigint
 
 //note : Primitive data types are immutable, meaning their values cannot be changed once created.
+//stack memory vs heap memory
+//Primitive data types are stored in stack memory, which is faster to access compared to heap memory used for non-primitive data types.
 
 
 //Example of Primitive Data Types:
